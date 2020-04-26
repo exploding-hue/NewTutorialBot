@@ -19,4 +19,4 @@ bot.on('message',async message=>{
     require('./events/guild/message')(bot,message)
 })
 const token = require(`./token.json`)
-bot.login(token.Token)
+client.login(process.env.BOT_TOKEN)
